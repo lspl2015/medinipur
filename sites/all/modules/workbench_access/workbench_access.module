@@ -443,6 +443,7 @@ function workbench_access_get_node_tree($node) {
  * @return
  *   The id of the rule that grants access, or FALSE if none do.
  */
+/* original function
 function workbench_access_check($op, $type, $access_ids, $account_access) {
   foreach ($access_ids as $access_id) {
     if ($id = workbench_access_in_tree($access_id, $account_access)) {
@@ -452,6 +453,27 @@ function workbench_access_check($op, $type, $access_ids, $account_access) {
     }
   }
   return FALSE;
+} */
+
+/* My customize function working on and condition to check access */ 
+function workbench_access_check($op, $type, $access_ids, $account_access) {
+  foreach ($access_ids as $access_id) {
+    if ($id = workbench_access_in_tree($access_id, $account_access)) {
+      if (in_array('all', $account_access[$id][$op]) || in_array($type, $account_access[$id][$op])) {
+        $access_return = $id;
+      }
+	  else{
+	   $access_return = FALSE;
+	   break;
+	   }
+    }
+	else{
+	   $access_return = FALSE;
+	   break;
+	   }
+  }
+  
+  return $access_return;
 }
 
 /**

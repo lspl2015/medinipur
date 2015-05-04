@@ -7151,3 +7151,9 @@ input[type="date"]:focus {
 	top:50px;
 }	
 }*/
+
+
+.inline-class 
+{
+float:left !important;
+}
