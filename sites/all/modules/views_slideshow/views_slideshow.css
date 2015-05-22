@@ -1,0 +1,22 @@
+#views-slideshow-form-wrapper .form-item.dependent-options {
+  padding-left: 5px;
+}
+
+#views-slideshow-form-wrapper .vs-dependent {
+  padding-left: 30px;
+}
+.views-slideshow-controls-bottom .views-slideshow-pager-field-item 
+{ float: left; margin: -25px 19px -25px  0; }
+
+
+.view-slider .views-field-title
+{ 
+position:relative;
+bottom:57px;padding:10px 0px;
+background:rgba(0,0,0,0.5);
+}
+.view-slider .views-field-title a
+{
+color:#fff;
+ 
+}
