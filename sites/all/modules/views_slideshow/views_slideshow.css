@@ -6,17 +6,22 @@
   padding-left: 30px;
 }
 .views-slideshow-controls-bottom .views-slideshow-pager-field-item 
-{ float: left; margin: -25px 19px -25px  0; }
+{/*  float: left; margin: -25px 19px -25px  0; */ }
 
 
 .view-slider .views-field-title
 { 
-position:relative;
-bottom:57px;padding:10px 0px;
-background:rgba(0,0,0,0.5);
+  position: relative;
+  bottom: 65px;
+  padding: 20px 10px;
+  background: rgba(0,0,0,0.5);
 }
 .view-slider .views-field-title a
 {
 color:#fff;
- 
+font-size:20px;
+}
+.view-slider 
+{
+margin-bottom:-65px;
 }
